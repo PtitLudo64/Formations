@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fnt/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+header {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+}
+header nav {
+    display: none;
+}
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+header nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+header nav ul li img {
+    height: 1rem;
+    margin-right: 3px;
+}
+header nav ul li a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+header nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f00;
+    transition: 0.5s ease;
+}
+header nav ul li:hover a::after {
+    width: 100%;
+}
+
+#hero {
+    position: relative;
+    background-image: url(../img/mac.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: #fff;
+}
+#hero #texts h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+#hero #texts p {
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+#hero #texts button {
+    padding: .8rem 1.5rem;
+    border: none;
+    background-color: #eeea;
+}
+#hero #social {
+    position: absolute;
+    display: flex;
+    gap: .5rem;
+    bottom: 2rem;
+}
+#hero #social img {
+    height: 1rem;
+    filter: invert(.5);
+}
