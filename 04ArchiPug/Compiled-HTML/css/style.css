@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body header {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: .7rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 1px 3px 3px #ccc;
+}
+body header h1 {
+    font-size: 1.3rem;
+    letter-spacing: 2.5px;
+}
+body header h1 span:nth-of-type(1) {
+    font-weight: 900;
+}
+body header h1 span:nth-of-type(2) {
+    font-weight: 200;
+}
+body header nav {
+    display: none;
+}
+body header nav ul{
+    display: flex;
+    gap: 1rem;
+}
+body header nav ul li {
+    list-style: none;
+}
+body header nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+body header nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f00;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+body header nav ul li:hover a::after {
+    width: 100%;
+}
+
+body #hero {
+    position: relative;
+    background-image: url(../img/architect.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    aspect-ratio: 1.87;
+}
+body #hero p {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body #hero p span:nth-of-type(1) {
+    background-color: #333d;
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1rem;
+    letter-spacing: 5px;
+}
+body #hero p span:nth-of-type(2) {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: #f1f1f1;
+    display: none;
+}
+body section {
+    padding: 2.5rem 1.5rem;
+}
+body section h2 {
+    font-weight: 200;
+}
+body section hr {
+    margin: 1rem auto;
+    border: 1px solid #ddd;
+}
+body section div p {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    padding: .7rem;
+    font-weight: 600;
+}
+
+body #project > div {
+    display: grid;
+    gap: 0.6rem;
+    grid-template-columns: 1fr;
+}
+body #project > div > div {
+    background-size: cover;
+    aspect-ratio: 1.5;
+    background-position: center;
+    transition: box-shadow .3s ease, transform .5s ease;
+}
+body #project > div > div:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 1px 15px 3px #aac2ff;
+}
+body #project > div > div:hover p {
+    color: #8af;
+}
+body #project hr {
+    margin-bottom: 2rem;
+}
+body #project div #h1 {
+    background-image: url(../img/house5.jpg);
+}
+body #project div #h2 {
+    background-image: url(../img/house2.jpg);
+}
+body #project div #h3 {
+    background-image: url(../img/house3.jpg);
+}
+body #project div #h4 {
+    background-image: url(../img/house4.jpg);
+}
+body #project div #h5 {
+    background-image: url(../img/house2.jpg);
+}
+body #project div #h6 {
+    background-image: url(../img/house5.jpg);
+}
+body #project div #h7 {
+    background-image: url(../img/house4.jpg);
+}
+body #project div #h8 {
+    background-image: url(../img/house3.jpg);
+}
+
+body #trombi {
+    display: grid;
+    gap: 0.6rem;
+    grid-template-columns: 1fr;
+}
+body div .people {
+    margin-top: 2rem;
+}
+body div .people img {
+    width: 100%;
+    filter: grayscale(0.75);
+}
+body div .people h3 {
+    font-weight: 300;
+    margin: 1rem 0;
+}
+body div .people h4 {
+    font-weight: 100;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+body div .people p {
+    background-color: initial;
+    color: #000;
+    font-weight: normal;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+body div .people button {
+    width: 100%;
+    border: none;
+    padding: .6rem;
+    transition: color 0.5s ease, background 0.5s ease;
+}
+body div .people button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #f1f1f1;
+}
+body #contact {
+    margin: 2.5rem auto .5rem;
+}
+body #contact form input{
+    width: 100%;
+    margin: .5rem 0;
+    font-size: .9rem;
+    padding: .5rem;
+}
+body #contact form input[type="submit"] {
+    color: #fff;
+    background-color: #000;
+    width: fit-content;
+    font-size: .9rem;
+    margin: 1rem 0;
+}
+body #contact img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    body header nav {
+        display: block;
+    }
+    body #hero p span:nth-of-type(2) {
+        display: block;
+    }
+    body #project div,
+    body #about #trombi  {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    body #project div,
+    body #about #trombi {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

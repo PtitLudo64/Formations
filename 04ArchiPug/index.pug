@@ -1,0 +1,90 @@
+doctype doctype html
+html(lang="fr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Maquette Archi
+        link(rel="stylesheet", href="css/style.css")
+    body 
+        // Header
+        header 
+            h1 
+                span BR 
+                span Architects
+            //- Navigation cachée par défaut
+            nav 
+                ul 
+                    li: a(href="#project") Projects 
+                    li: a(href="#about") About 
+                    li: a(href="#contact") Contact 
+        #hero 
+            p 
+                span BR 
+                //- 2nd span caché par défaut
+                span &nbsp;Architects
+        // Section Projects
+        section#project 
+            h2 Projects 
+            hr
+            div
+                #h1 
+                    p Summer House
+                #h2 
+                    p Brick House
+                #h3 
+                    p Renovated
+                #h4 
+                    p Barn House
+                #h5 
+                    p Summer House
+                #h6 
+                    p Brick House
+                #h7 
+                    p Renovated
+                #h8 
+                    p Barn House
+        // Section About                    
+        section#about 
+            h2 About
+            hr
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            #trombi
+                .people
+                    img(src="img/team2.jpg", alt="John Doe")
+                    h3 John Doe
+                    h4 CEO & Founder 
+                    p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    button Contact
+                .people
+                    img(src="img/team1.jpg", alt="Jane Doe")
+                    h3 Jane Doe
+                    h4 Architect
+                    p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    button Contact
+                .people
+                    img(src="img/team3.jpg", alt="Mike Ross")
+                    h3 Mike Ross
+                    h4 Architect
+                    p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    button Contact
+                .people
+                    img(src="img/team4.jpg", alt="Dan Star")
+                    h3 Dan Star
+                    h4 Architect
+                    p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    button Contact
+        // Section Contact
+        section#contact 
+            h2 Contact 
+            hr
+            p Lets get in touch and talk about your next project.
+            form(action="#")
+                input#name(type="text", name="text", placeholder="Name")
+                input#mail(type="email", name="mail", placeholder="Email")
+                input#subject(type="text", name="subject", placeholder="Subject")
+                input#comment(type="text", name="comment", placeholder="Comment")
+                input(type="submit", value="SEND MESSAGE")
+            img(src="img/map.jpg", alt="Carte de Notre adresse")
+        // Footer
+        footer 
+            p Powered by Ludovic PAJOR
