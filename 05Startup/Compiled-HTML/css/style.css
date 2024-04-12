@@ -3,6 +3,11 @@
     src: url(../fnt/Raleway-VariableFont_wght.ttf);
 }
 
+:root {
+    --horizontal-padding: 1rem;
+    --vertical-padding: 5rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +24,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: var(--horizontal-padding);
     background-color: #fff;
 }
 header nav {
@@ -95,4 +100,61 @@ header nav ul li:hover a::after {
 #hero #social img {
     height: 1rem;
     filter: invert(.5);
+}
+
+section {
+    padding: var(--vertical-padding) var(--horizontal-padding);
+    text-align: center;
+}
+section h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 1rem;
+}
+section h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+section p {
+    line-height: 1.6;
+    font-size: .7rem;
+}
+
+main #about .aboutCard {
+    margin: 1rem auto;
+}
+main #about .aboutCard img {
+    width: 50px;
+    margin: 1rem;
+}
+
+main #weKnow {
+    background-color: #e5e5e5;
+    padding: var(--vertical-padding) var(--horizontal-padding);
+}
+main #weKnow h2 {
+    font-weight: 400;
+    margin: 1rem 0;
+}
+main #weKnow p {
+    line-height: 1.6;
+    font-size: .7rem;
+}
+main #weKnow button {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: .6rem;
+    margin: 1rem 0;
+}
+main #weKnow button img {
+    width: 16px;
+    filter: invert(1);
+}
+main #weKnow > img {
+    width: 100%;
 }
