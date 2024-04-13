@@ -71,7 +71,6 @@ header nav ul li:hover a::after {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     color: #fff;
 }
@@ -226,4 +225,103 @@ main #work #pictureContainer {
 }
 main #work #pictureContainer img {
     width: 100%;
+}
+
+main #skills {
+    background-color: #ededed;
+    padding: var(--vertical-padding) var(--horizontal-padding);
+}
+main #skills h2 {
+    font-weight: 400;
+    margin: 1rem 0;
+}
+main #skills #skillsTexts p {
+    line-height: 1.6;
+    font-size: .7rem;
+    margin-bottom: 1rem;
+}
+main #skills #skillsGauges .skill p {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+}
+main #skills #skillsGauges .skill p img {
+    width: .8rem;
+    margin-right: 1rem;
+}
+main #skills #skillsGauges .skill p span {
+    font-size: .7rem;
+    letter-spacing: 2px;
+}
+main #skills #skillsGauges .gauge {
+    background-color: #999;
+}
+main #skills #skillsGauges .gauge > div {
+    background-color: #666;
+}
+main #skills #skillsGauges .gauge > div p {
+    padding: .2rem;
+    text-align: center;
+    width: fit-content;
+    color: #fff;
+    font-size: .7rem;
+}
+main #skills #skillsGauges .gauge #value90 {
+    width: 90%;
+}
+main #skills #skillsGauges .gauge #value85 {
+    width: 85%;
+}
+main #skills #skillsGauges .gauge #value75 {
+    width: 75%;
+}
+
+main #pricing {
+    background-color: #555;
+    color: #fff;
+}
+main #pricing #pricingPlans {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+main #pricing #pricingPlans .plan {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: .7rem;
+}
+main #pricing #pricingPlans .plan .header {
+    background-color: #000;
+    color: #fff;
+}
+main #pricing #pricingPlans .plan .header.red{
+    background-color: #ff3535;
+    color: #fff;
+    padding: 1.7rem 0;
+}
+main #pricing #pricingPlans .plan .header p {
+    font-size: 1.3rem;
+    padding: 1.5rem;
+}
+main #pricing #pricingPlans .plan .caract {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: .8rem;
+}
+main #pricing #pricingPlans .plan .caract span:nth-of-type(1) {
+    font-weight: 600;
+}
+main #pricing #pricingPlans .plan .price {
+    padding: 1.5rem;
+}
+main #pricing #pricingPlans .plan .price p {
+    color: #777;
+}
+main #pricing #pricingPlans .plan .cta {
+    background-color: #eee;
+    padding: 1rem;
+}
+main #pricing #pricingPlans .plan .cta button {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
 }
