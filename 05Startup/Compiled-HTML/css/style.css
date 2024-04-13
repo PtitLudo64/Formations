@@ -130,7 +130,7 @@ main #about .aboutCard img {
 }
 
 main #weKnow {
-    background-color: #e5e5e5;
+    background-color: #ededed;
     padding: var(--vertical-padding) var(--horizontal-padding);
 }
 main #weKnow h2 {
@@ -156,5 +156,74 @@ main #weKnow button img {
     filter: invert(1);
 }
 main #weKnow > img {
+    width: 100%;
+}
+
+main #team > h3 {
+    margin-bottom: 2rem;
+}
+main #team .teamContainer .teamCard {
+    text-align: left;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 3px #ccc;
+    margin-bottom: .7rem;
+}
+main #team .teamContainer .teamCard > img {
+    width: 100%;
+    filter: grayscale(0.75);
+}
+main #team .teamContainer .teamCard .teamCardContent > h2 {
+    text-transform: none;
+}
+main #team .teamContainer .teamCard .teamCardContent > h3 {
+    font-size: .8rem;
+    color: #999;
+}
+main #team .teamContainer .teamCard .teamCardContent p {
+    padding: 1rem;
+}
+main #team .teamContainer .teamCard .teamCardContent button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    width: calc(100% - 2rem);
+    margin: 0 1rem .5rem;
+}
+main #team .teamContainer .teamCard .teamCardContent button img {
+    width: .7rem;
+}
+main #team .teamContainer .teamCard .teamCardContent button p {
+    padding: 3px;
+}
+
+main #numbers {
+    background-color: #777;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    gap: 1rem;
+}
+main #numbers .number {
+    text-align: center;
+    h2 {
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-bottom: .7rem;
+    }
+    p {
+        font-size: .75rem;
+    }
+}
+
+main #work #pictureContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+main #work #pictureContainer img {
     width: 100%;
 }
