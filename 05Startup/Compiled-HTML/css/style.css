@@ -325,3 +325,67 @@ main #pricing #pricingPlans .plan .cta button {
     color: #fff;
     padding: 1rem;
 }
+
+main #contact {
+    background-color: #eee;
+}
+main #contact #lines {
+    margin-top: 2rem;
+}
+main #contact .line {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: end;
+    gap: 1rem;
+    /* margin-bottom: .7rem; */
+    height: 2.5rem;
+}
+main #contact .line img {
+    justify-self: center;
+    width: 1rem;
+}
+main #contact .line p {
+    text-align: left;
+}
+
+main #contact form {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main #contact form input{
+    width: 100%;
+    margin: .5rem 0;
+    font-size: .9rem;
+    padding: .5rem;
+    border: 1px solid #ccc;
+}
+main #contact form button {
+    margin: .5rem 0;
+    font-size: .9rem;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+}
+
+main #contact form button img {
+    filter: invert(1);
+    width: 0.9rem;
+    margin-right: 3px;
+}
+
+main #contact form > img {
+    width: 100%;
+    margin-top: 2.5rem;
+    filter: grayscale(0.75);
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+}

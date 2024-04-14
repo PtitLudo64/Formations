@@ -218,4 +218,27 @@ html(lang="fr")
                             p per month 
                         .cta 
                             button Sign Up 
+            section#contact 
+                h2 Contact 
+                h3 Lets get in touch. Send us a message.
+                #lines
+                    .line 
+                        img(src="icon/Location.svg", alt="")
+                        p Chicago, US
+                    .line 
+                        img(src="icon/Phone.svg", alt="")
+                        p Phone +00 151515
+                    .line 
+                        img(src="icon/mail.svg", alt="")
+                        p Email: mail@mail.com 
+                    form(action="#")
+                        input#name(type="text", name="text", placeholder="Name")
+                        input#mail(type="email", name="mail", placeholder="Email")
+                        input#subject(type="text", name="subject", placeholder="Subject")
+                        input#msg(type="text", name="message", placeholder="Message")
+                        //- input(type="submit", value="SEND MESSAGE")
+                        button(type="submit", title="Send")
+                            img(src="icon/Plane.svg", alt="")
+                            | SEND MESSAGE
+                        img(src="img/map.jpg", alt="Carte de Notre adresse")
         footer 
