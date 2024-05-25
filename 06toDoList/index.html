@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>📋 To Do List 📋</h1>
+
+    <!-- icones : ✔️ 🖊️ 🗑️ ✅-->
+
+    <div id="container">
+        <div id="input">
+            <input type="text" name="saisie" id="saisie">
+            <label for="saisie">✔️</label>
+        </div>
+        <div id="liste">
+            <ol></ol>
+        </div>
+    </div>
+
+    <div id="modale">
+        <h2>Confirmation</h2>
+        <h3>Etes-vous sûr de vouloir supprimer la tâche :</h3>
+        <p id="tache">&nbsp;</p>
+        <div id="modalButtons">
+            <button id="oui">Oui</button>
+            <button id="non">Non</button>
+        </div>
+
+        <input type="text" name="index" id="indexToDelete" value="-1">
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
