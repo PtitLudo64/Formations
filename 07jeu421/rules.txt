@@ -1,0 +1,29 @@
+Jeu de dés:
+
+lancer 3 dés, en fonction du résultat, augmenter le score.
+
+21 est le score minimum pour terminer la partie.
+
+
+421 = 10 jetons 	    X
+3 as = 7 jetons 	    X
+2 as +  6 = 6 jetons	X
+3 six = 6 jetons 	    X
+2 as + 5 = 5 jetons	    X
+3 x 5 = 5 jetons 	    X
+2 as + 4 = 4 jetons	    X
+3 x 4 = 4 jetons 	    X
+2 as + 3 = 3 jetons	    X
+3 x 3 = 3 jetons 	    X
+2 as + 2 = 2 jetons	    X
+3 x 2 = 2 jetons 	    X
+6 + 5 + 4 = 2 jetons	X
+5 + 4 + 3 = 2 jetons	X
+4 + 3 + 2 = 2 jetons	X
+3 + 2 + as = 1 jetons
+
+
+Utiliser :
+Math.random()
+Math.floor()
+Array.sort()
