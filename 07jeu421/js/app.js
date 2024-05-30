@@ -164,7 +164,7 @@ const play = () => {
 
     if (score >= 21) {
         runningGame = false;
-        msg.innerText = "You won !";
+        msg.innerText += " YOU WON !";
         btnPlay.innerText = 'New game ?';
     }
 

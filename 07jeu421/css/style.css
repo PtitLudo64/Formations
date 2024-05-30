@@ -19,11 +19,10 @@ body {
     }
     h1 {
         font-size: 5.5rem;
-        text-shadow: 0 0 5px #f90,
-                    0 0 10px #f90,
-                    0 0 20px #f90,
-                    0 0 40px #f90;
-        -webkit-text-stroke: 5px #1a4e0f;
+        color: #ff9900;
+        text-shadow: 5px 10px 15px #222,
+                    -1px -2px 0px #ff0;
+        /* -webkit-text-stroke: 5px #1a4e0f; */
     }
     h2 {
         font-size: 2rem;
@@ -33,6 +32,8 @@ body {
         justify-content: center;
         font-size: 3rem;
         color: #ff9900;
+        text-shadow: 5px 10px 15px #000,
+                    -1px -1px 0px #ff0;
         margin-bottom: 1.5rem;
     }
     #dice {
@@ -52,11 +53,15 @@ body {
         font-weight: 600;
         letter-spacing: 2px;
         background-color: #ff9900;
-        color: #f1f1f1;
+        color: #333;
+        text-shadow: -1px -1px 3px #000,
+                    1px 1px 0px #ff0;
         border-radius: 10px;
-        box-shadow: 0 0 10px #ff9900,
+        /* box-shadow: 0 0 10px #ff9900,
                     0 0 20px #ffff00ab,
-                    0 0 40px #ffff00ab;
+                    0 0 40px #ffff00ab; */
+        box-shadow: 5px 8px 25px #222,
+                    -1px -2px 0px #ff0;
         cursor: pointer;
     }
     #msg {

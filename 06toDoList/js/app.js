@@ -14,13 +14,12 @@ let modifyValue = false;
 let indexToModify = -1;
 
 
-// Bidouillage pour calculer le nombre de caractères par ligne.
+// Bidouillage approximatif pour calculer le nombre de caractères par ligne.
 const iconesWidth = 16 + 96;
 const sizeOfaChar = 12;
 let pWidth = liste.clientWidth - iconesWidth;
 let nbCharPerLine = (pWidth, pWidth / sizeOfaChar);
 
-console.log(nbCharPerLine);
 
 
 /**
